@@ -9,15 +9,17 @@
 ================================================================================================
 ## disable root login to ssh (with sed command)
 
-#### 1. disable the root login into /etc/passwd
+#### 1. disable the root login in sshd_config file
+```s
+sudo sed -i "s|PermitRootLogin yes|PermitRootLogin no|g" /etc/ssh/sshd_config
+sudo systemctl restart sshd
+```
+
+#### 2. disable the root login into /etc/passwd
 ```s
 sudo sed -i "s|/root:/bin/bash|/root:/sbin/nologin|g" /etc/passwd
 ```
 
-#### 2. disable the root login in sshd_config file
-```s
-sudo sed -i "s|PermitRootLogin yes|PermitRootLogin no|g" /etc/ssh/sshd_config
-```
 
 ## How to set timezone
 
