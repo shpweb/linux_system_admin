@@ -10,15 +10,26 @@
 ## disable root login to ssh (with sed command)
 
 #### 1. disable the root login in sshd_config file
+Disable the root login
 ```s
 sudo sed -i "s|PermitRootLogin yes|PermitRootLogin no|g" /etc/ssh/sshd_config
 ```
+
+Disable the root login evenif commented the string
 ```s
 sudo sed -i "s|#PermitRootLogin yes|PermitRootLogin no|g" /etc/ssh/sshd_config
 ```
+
+Restart the service to take effect the change
 ```s
 sudo systemctl restart sshd
 ```
+
+Validate if RootLogin disabled
+```s
+sudo cat /etc/ssh/sshd_config | grep RootLogin
+```
+
 
 #### 2. disable the root login into /etc/passwd
 ```s
