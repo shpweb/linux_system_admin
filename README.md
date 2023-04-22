@@ -14,6 +14,9 @@
 sudo sed -i "s|PermitRootLogin yes|PermitRootLogin no|g" /etc/ssh/sshd_config
 ```
 ```s
+sudo sed -i "s|#PermitRootLogin yes|PermitRootLogin no|g" /etc/ssh/sshd_config
+```
+```s
 sudo systemctl restart sshd
 ```
 
