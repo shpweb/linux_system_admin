@@ -3,7 +3,7 @@
 
 [Disable root login to ssh (with sed command)](https://github.com/shpweb/linux_system_admin#disable-root-login-to-ssh-with-sed-command-1)  
 [How to set timezone](https://github.com/shpweb/linux_system_admin/tree/main#how-to-set-timezone)  
-[Find specific patterns of files at one directory and copy those to another directory]()
+[Find specific patterns of files at one directory and copy those to another directory](https://github.com/shpweb/linux_system_admin/tree/main#how-to-set-timezone)
 [How to setup SSH Password-less login to remote linux system]()
 
 
@@ -37,7 +37,7 @@ sudo cat /etc/ssh/sshd_config | grep RootLogin
 ```s
 sudo sed -i "s|/root:/bin/bash|/root:/sbin/nologin|g" /etc/passwd
 ```
-
+================================================================================
 
 ## How to set timezone
 
@@ -82,7 +82,7 @@ rm -rf /etc/localtime
 ```s
 ln -s /usr/share/zoneinfo/<timezone to set> /etc/localtime
 ```
-
+================================================================================
 
 ## find specific patterns of files at one directory and copy those to another directory
 
@@ -108,7 +108,7 @@ In above commands:
 - /home/target – target directory to save the matching files.
 \; – indicates it that the commands to be executed are now complete, and to carry out the command again on the next match.
 
-
+================================================================================
 
 ## How to setup SSH Password-less login to remote linux system
 
