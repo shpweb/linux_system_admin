@@ -3,7 +3,7 @@
 
 [Disable root login to ssh (with sed command)](https://github.com/shpweb/linux_system_admin#disable-root-login-to-ssh-with-sed-command-1)  
 [How to set timezone](https://github.com/shpweb/linux_system_admin/tree/main#how-to-set-timezone)  
-[Find specific patterns of files at one directory and copy those to another directory](https://github.com/shpweb/linux_system_admin/tree/main#find-specific-patterns-of-files-at-one-directory-and-copy-those-to-another-directory)
+[Find specific patterns of files at one directory and copy those to another directory](https://github.com/shpweb/linux_system_admin/tree/main#find-specific-patterns-of-files-at-one-directory-and-copy-those-to-another-directory)  
 [How to setup SSH Password-less login to remote linux system](https://github.com/shpweb/linux_system_admin/tree/main#how-to-setup-ssh-password-less-login-to-remote-linux-system)
 
 
