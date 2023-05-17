@@ -5,7 +5,7 @@
 - [How to set timezone](https://github.com/shpweb/linux_system_admin/tree/main#how-to-set-timezone)  
 - [Find specific patterns of files at one directory and copy those to another directory](https://github.com/shpweb/linux_system_admin/tree/main#find-specific-patterns-of-files-at-one-directory-and-copy-those-to-another-directory)  
 - [How to setup SSH Password-less login to remote linux system](https://github.com/shpweb/linux_system_admin/tree/main#how-to-setup-ssh-password-less-login-to-remote-linux-system)
-- Enable Service for the startup in Linux (Redhat/ CentOS)
+- [Enable Service for the startup in Linux (Redhat/ CentOS)](https://github.com/shpweb/linux_system_admin/blob/main/README.md#enable-service-for-the-startup-in-linux-redhat-centos)
 
 
 
@@ -181,11 +181,12 @@ chmod 600 ~/.ssh/authorized_keys
 
 ================================================================================  
 ## Enable Service for the startup in Linux (Redhat/ CentOS)
-  
+  If you want to add the service in starup when Linux system boot, enable the service with below command:
   ```s
   systemctl enable <service-name>
   ```
   
+  Check if the service is enabled for startup:
   ```s
   systemctl list-unit-files
   ```
